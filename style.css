@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: blue;
+}
+
+img{
+    height: 80%;
+    position: absolute;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#left{
+    left: 0;
+}
+
+#right{
+    cursor: pointer;
+}
+
+.static{
+    left: 100%;
+    transform: translateX(-100%);
+}
