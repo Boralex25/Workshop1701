@@ -4,10 +4,13 @@ body{
     box-sizing: border-box;
     width: 100%;
     background-color: blue;
+    position: relative;
 }
 
 img{
-    height: 80%;
+    height: 50vh;
+    max-width: 80vw;
+    object-fit: contain;
     position: absolute;
     user-select: none;
     -webkit-user-drag: none;
@@ -15,13 +18,15 @@ img{
 
 #left{
     left: 0;
+    /* bottom: 10vh; */
 }
 
 #right{
     cursor: pointer;
+    /* bottom: 10vh; */
 }
 
 .static{
-    left: 100%;
-    transform: translateX(-100%);
+    right: 0;
+    transform: none;
 }
